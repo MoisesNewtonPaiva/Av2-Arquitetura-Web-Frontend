@@ -1,9 +1,9 @@
 
 import React, { useState } from 'react';
 import axios from 'axios';
-import Login from './Login';     
-import Alunos from './Alunos'; 
-import Cursos from './Cursos';
+import Login from './Pages/Login';     
+import Alunos from './Pages/Alunos'; 
+import Cursos from './Pages/Cursos';
 import './App.css'
   
 
