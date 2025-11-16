@@ -8,7 +8,7 @@ import './App.css'
   
 
 
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = 'https://av2-arquitetura-web-nd87.onrender.com/api';
 
 function App() {
   
