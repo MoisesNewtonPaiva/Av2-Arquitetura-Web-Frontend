@@ -1,16 +1,38 @@
-# React + Vite
+# Sistema Acadêmico - Frontend (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[cite_start]Este é o projeto frontend (BÔNUS) [cite: 55] para o Sistema Acadêmico. É uma interface de usuário construída em React que consome a API do backend.
 
-Currently, two official plugins are available:
+## [cite_start]🛠️ Tecnologias Utilizadas [cite: 132]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* [cite_start]React (via Vite) [cite: 65]
+* Axios (para chamadas de API)
+* [cite_start]Vercel (Plataforma de Deploy) [cite: 69]
 
-## React Compiler
+## [cite_start]🚀 Como Rodar Localmente [cite: 133]
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1.  Clone este repositório.
+2.  Execute `npm install` para instalar as dependências.
+3.  Execute `npm run dev` para iniciar o servidor de desenvolvimento.
+4.  A aplicação estará disponível em `http://localhost:5173` (ou a porta indicada pelo Vite).
 
-## Expanding the ESLint configuration
+## [cite_start]🔌 Consumindo a API [cite: 134]
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+[cite_start]Este frontend consome a API do backend que está hospedada no Render[cite: 60].
+
+* A URL da API é configurada através da variável de ambiente `VITE_API_URL`.
+* Localmente, você pode criar um arquivo `.env.local` na raiz e adicionar:
+    `VITE_API_URL=https://av2-arquitetura-web-nd87.onrender.com/api`
+* A aplicação lida com a autenticação básica (HTTP Basic) em todas as requisições.
+
+## [cite_start]☁️ Deploy no Vercel [cite: 135]
+
+[cite_start]O deploy deste frontend foi feito no Vercel[cite: 69].
+
+1.  Um novo projeto foi criado no Vercel, linkado a este repositório do GitHub.
+2.  O Vercel detectou automaticamente o `Vite` como *framework*.
+3.  A seguinte Variável de Ambiente foi configurada no Vercel:
+    * **Name:** `VITE_API_URL`
+    * **Value:** `https://av2-arquitetura-web-nd87.onrender.com/ap`
+4.  A URL do site no ar é: `https://av2-arquitetura-web-frontend.vercel.app/`
+
+---
