@@ -33,6 +33,6 @@
 3.  A seguinte Variável de Ambiente foi configurada no Vercel:
     * **Name:** `VITE_API_URL`
     * **Value:** `https://av2-arquitetura-web-nd87.onrender.com/ap`
-4.  A URL do site no ar é: `https://av2-arquitetura-web-frontend.vercel.app/`
+4.  A URL do site no ar é: `https://av2-arquitetura-web-frontend-z6te.vercel.app/`
 
 ---
