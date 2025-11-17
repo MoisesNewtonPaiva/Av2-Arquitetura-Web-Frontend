@@ -32,7 +32,7 @@ function Cursos({ apiClient }) {
       setLoading(false);
     }
   };
-
+useEffect(() => {
   if (apiClient) {
     fetchCursos();
     }
