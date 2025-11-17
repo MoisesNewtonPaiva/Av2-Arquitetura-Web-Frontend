@@ -33,9 +33,10 @@ function Cursos({ apiClient }) {
     }
   };
 
-  useEffect(() => {
+  if (apiClient) {
     fetchCursos();
-  }, []);
+    }
+  }, [apiClient]);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
