@@ -22,6 +22,9 @@ A aplicação consome a API (protegida por HTTP Basic Auth) da seguinte forma:
 5.  O `App.jsx` re-renderiza, escondendo o Login e mostrando as páginas de Alunos e Cursos.
 6.  Os componentes `Alunos.jsx` e `Cursos.jsx` leem o *token* salvo no `localStorage` para criar suas próprias instâncias do Axios (`apiClient`) e fazer as chamadas de API (GET, POST, PUT, DELETE).
 
+> **⚠️ Nota Importante sobre o Login:**
+> Devido à forma como os componentes `Alunos` e `Cursos` são inicializados (lendo o `localStorage` no momento em que o arquivo é carregado), **após fazer o login, é necessário atualizar a página (F5) uma vez** para que eles possam ler o novo *token* e a API funcionar corretamente.
+
 ## 🛠️ Tecnologias Utilizadas
 
 * React (via Vite)
