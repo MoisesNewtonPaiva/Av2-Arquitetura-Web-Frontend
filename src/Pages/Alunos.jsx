@@ -29,7 +29,9 @@ function Alunos({ apiClient }) {
   };
 
   useEffect(() => {
-    fetchAlunos();
+    if(apiClient) {
+      fetchAlunos();
+    }
   }, [apiClient]); 
 
   const handleInputChange = (e) => {
